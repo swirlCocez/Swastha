@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    color: black;
+}
+
+body{
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size:2em ;
+    color: #fff;
+    user-select: none;
+
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    font-weight: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+}
+.navigation a:hover, .navigation a.active{
+    color:#333;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navigation a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+}
+.navigation a:hover span, .navigation a.active span{
+    transform: scale(1);
+    opacity: 1;
+
+}
+.parallax video{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: cover;
+
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: white ;
+    text-shadow: 2px 4px 5px black;
+}
+
+
+/* nav ends */
+
+.aboutus{
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: large;
+    background-color: white;
+    color: black;
+    background: url(ayurveda-rgb-color-icon-vector-31586359.jpg) ;
+    background-repeat: no-repeat;
+    background-size: auto;
+   
+    
+    object-fit: cover;
+    image-orientation: flip;
+
+}
+.content{
+    display: absolute;
+    height: 100px;
+    align-items: center;
+    margin-top: 76px;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 135, 219);
+    color: white;
+    font-weight: 600;
+    transition: width 1s;
+    background-image: url(background.png);
+}
+.techs{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+#box:hover{
+    width: 300px;
+    background: url('HD-wallpaper-viar-virtual-reality-neon-technology-art.jpg') no-repeat;
+}
